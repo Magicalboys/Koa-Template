@@ -19,7 +19,8 @@ Content-Type：application/json
     "password":"1234"
 }
 `
-添加消息接口 POST http://localhost/message/addMsg
+
+查询私聊消息接口 POST http://localhost/message/addMsg
 
 Content-Type：application/json
 
@@ -29,7 +30,17 @@ Content-Type：application/json
 }
 `
 
-查询消息接口 POST http://localhost/message/addMsg
+查询群聊消息接口 POST http://localhost/message/getAllMsg
+
+Content-Type：application/json
+
+`{
+    "from":1, 
+    "to":2,
+}
+`
+
+添加消息接口 POST http://localhost/message/addMsg
 
 Content-Type：application/json
 
@@ -40,12 +51,15 @@ Content-Type：application/json
 }
 `
 
+上传头像接口 POST http://localhost/avatar/:id 上传 id 的头像
+
+
+获取头像接口 GET http://localhost/avatar/findavatar/:username 查询 username 的头像
 
 
 获取用户列表接口 GET http://localhost/user/:id  查询非id的所有用户信息
 
 
-获取头像接口 GET http://localhost/avatar/findavatar/:username 查询 username 的头像
 
 
 
