@@ -14,7 +14,7 @@ Content-Type：application/json
 
 Content-Type：application/json
 
-`{
+`{··
     "username":"Magical",
     "password":"1234"
 }
